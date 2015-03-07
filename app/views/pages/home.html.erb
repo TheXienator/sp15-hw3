@@ -1,0 +1,29 @@
+<p>Users:</p>
+<ul>
+  <p>
+  <% @users.each do |user| %>
+    <li><%= user.username %></li>
+    <li><%= user.age %></li>
+    <li><%= user.email %></li>
+  <% end %>
+  </p>
+</ul>
+
+<p>Cats:</p>
+<ul>
+  <p>
+  <% @cats.each do |cat| %>
+    <li><%= cat.name %></li>
+  <% end %>
+  </p>
+</ul>
+
+<p>Todos:</p>
+<ul>
+  <p>
+  <% @todos.each do |todo| %>
+    <li><%= todo.tasks %></li>
+    <li><%= todo.finished %></li>
+  <% end %>
+  </p>
+</ul>
